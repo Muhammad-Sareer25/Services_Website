@@ -1,6 +1,8 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
+import ScrollToTop from './components/ScrollToTop';
+
 import HomePage from './pages/Home';
 import AboutPage from './pages/About';
 import ServicesPage from './pages/Services';
@@ -25,77 +27,80 @@ import { ProtectedRoute, AdminRoute } from './components/ProtectedRoute';
 
 function App() {
   return (
-    <Routes>
-      {/* Public site */}
-      <Route path="/" element={<HomePage />} />
-      <Route path="/about" element={<AboutPage />} />
-      <Route path="/services" element={<ServicesPage />} />
-      <Route path="/services/:id" element={<ServiceDetailPage />} />
-      <Route path="/projects" element={<ProjectsPage />} />
-      <Route path="/contact" element={<ContactPage />} />
-      <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
-      <Route path="/terms" element={<TermsPage />} />
+    <>
+      <ScrollToTop />
+      <Routes>
+        {/* Public site */}
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/services" element={<ServicesPage />} />
+        <Route path="/services/:id" element={<ServiceDetailPage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+        <Route path="/terms" element={<TermsPage />} />
 
-      {/* Auth */}
-      <Route path="/login" element={<LoginPage />} />
-      <Route path="/register" element={<RegisterPage />} />
-      <Route path="/admin/login" element={<AdminLoginPage />} />
+        {/* Auth */}
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/register" element={<RegisterPage />} />
+        <Route path="/admin/login" element={<AdminLoginPage />} />
 
-      {/* User dashboard (protected) */}
-      <Route
-        path="/dashboard"
-        element={
-          <ProtectedRoute>
-            <DashboardPage />
-          </ProtectedRoute>
-        }
-      />
+        {/* User dashboard (protected) */}
+        <Route
+          path="/dashboard"
+          element={
+            <ProtectedRoute>
+              <DashboardPage />
+            </ProtectedRoute>
+          }
+        />
 
-      {/* Admin routes (protected + role-based) */}
-      <Route
-        path="/admin/dashboard"
-        element={
-          <AdminRoute>
-            <AdminDashboardPage />
-          </AdminRoute>
-        }
-      />
-      <Route
-        path="/admin/users"
-        element={
-          <AdminRoute>
-            <AdminUsersPage />
-          </AdminRoute>
-        }
-      />
-      <Route
-        path="/admin/enquiries"
-        element={
-          <AdminRoute>
-            <AdminEnquiriesPage />
-          </AdminRoute>
-        }
-      />
-      <Route
-        path="/admin/requests"
-        element={
-          <AdminRoute>
-            <AdminRequestsPage />
-          </AdminRoute>
-        }
-      />
-      <Route
-        path="/admin/profile"
-        element={
-          <AdminRoute>
-            <AdminProfilePage />
-          </AdminRoute>
-        }
-      />
+        {/* Admin routes (protected + role-based) */}
+        <Route
+          path="/admin/dashboard"
+          element={
+            <AdminRoute>
+              <AdminDashboardPage />
+            </AdminRoute>
+          }
+        />
+        <Route
+          path="/admin/users"
+          element={
+            <AdminRoute>
+              <AdminUsersPage />
+            </AdminRoute>
+          }
+        />
+        <Route
+          path="/admin/enquiries"
+          element={
+            <AdminRoute>
+              <AdminEnquiriesPage />
+            </AdminRoute>
+          }
+        />
+        <Route
+          path="/admin/requests"
+          element={
+            <AdminRoute>
+              <AdminRequestsPage />
+            </AdminRoute>
+          }
+        />
+        <Route
+          path="/admin/profile"
+          element={
+            <AdminRoute>
+              <AdminProfilePage />
+            </AdminRoute>
+          }
+        />
 
-      {/* 404 */}
-      <Route path="*" element={<NotFoundPage />} />
-    </Routes>
+        {/* 404 */}
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
+    </>
   );
 }
 

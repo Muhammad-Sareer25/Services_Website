@@ -61,7 +61,7 @@ const Footer = () => {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2.5">
                 <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0 text-navy-400" />
-                <span>Registered Office, United Kingdom<br />(86-90 Paul Street London England EC2A 4NE United Kingdom)</span>
+                <span>Registered Office, United Kingdom<br />86-90 Paul Street London England EC2A 4NE United Kingdom</span>
               </li>
               <li className="flex items-center gap-2.5">
                 <Phone className="h-4 w-4 flex-shrink-0 text-navy-400" />
@@ -70,6 +70,18 @@ const Footer = () => {
               <li className="flex items-center gap-2.5">
                 <Mail className="h-4 w-4 flex-shrink-0 text-navy-400" />
                 <a href="mailto:info@clicktzee.co.uk" className="hover:text-white transition-colors">info@clicktzee.co.uk</a>
+              </li>
+                <li className="flex items-center gap-2.5">
+                <Mail className="h-4 w-4 flex-shrink-0 text-navy-400" />
+                <a href="mailto:hr@clicktzee.co.uk" className="hover:text-white transition-colors">hr@clicktzee.co.uk</a>
+              </li>
+                <li className="flex items-center gap-2.5">
+                <Mail className="h-4 w-4 flex-shrink-0 text-navy-400" />
+                <a href="mailto:sales@clicktzee.co.uk" className="hover:text-white transition-colors">sales@clicktzee.co.uk</a>
+              </li>
+              <li className="flex items-center gap-2.5">
+                <Mail className="h-4 w-4 flex-shrink-0 text-navy-400" />
+                <a href="mailto:manager@clicktzee.co.uk" className="hover:text-white transition-colors">manager@clicktzee.co.uk</a>
               </li>
             </ul>
           </div>

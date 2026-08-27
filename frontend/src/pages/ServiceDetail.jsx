@@ -31,7 +31,7 @@ const ServiceDetailPage = () => {
       }
     };
     load();
-    window.scrollTo(0, 0);
+    
   }, [id]);
 
   if (loading) {

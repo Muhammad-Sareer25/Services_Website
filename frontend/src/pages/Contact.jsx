@@ -34,7 +34,7 @@ const ContactPage = () => {
               <ul className="flex flex-col gap-4 text-sm text-navy-600">
                 <li className="flex items-start gap-3">
                   <MapPin className="h-4.5 w-4.5 text-accent-600 flex-shrink-0 mt-0.5" />
-                  <span>Registered Office, United Kingdom<br /><span className="text-navy-400">(86-90 Paul Street London England EC2A 4NE United Kingdom)</span></span>
+                  <span>Registered Office, United Kingdom<br /><span className="text-navy-400">86-90 Paul Street London England EC2A 4NE United Kingdom</span></span>
                 </li>
                 <li className="flex items-center gap-3">
                   <Phone className="h-4.5 w-4.5 text-accent-600 flex-shrink-0" />
@@ -42,7 +42,11 @@ const ContactPage = () => {
                 </li>
                 <li className="flex items-center gap-3">
                   <Mail className="h-4.5 w-4.5 text-accent-600 flex-shrink-0" />
-                  <a href="mailto:info@clicktzee.co.uk" className="hover:text-accent-700">info@zeeclick.co.uk</a>
+                  <a href="mailto:info@clicktzee.co.uk" className="hover:text-accent-700">info@clicktzee.co.uk</a>
+                </li>
+                 <li className="flex items-center gap-3">
+                   <Mail className="h-4.5 w-4.5 text-accent-600 flex-shrink-0" />
+                    <a href="mailto:hr@clicktzee.co.uk" className="hover:text-accent-700">hr@clicktzee.co.uk</a>
                 </li>
                 <li className="flex items-start gap-3">
                   <Clock className="h-4.5 w-4.5 text-accent-600 flex-shrink-0 mt-0.5" />
