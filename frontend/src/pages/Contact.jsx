@@ -42,11 +42,15 @@ const ContactPage = () => {
                 </li>
                 <li className="flex items-center gap-3">
                   <Mail className="h-4.5 w-4.5 text-accent-600 flex-shrink-0" />
-                  <a href="mailto:info@clicktzee.co.uk" className="hover:text-accent-700">info@clicktzee.co.uk</a>
+                  <a href="mailto:info@clicktzee.com" className="hover:text-accent-700">info@clicktzee.com</a>
                 </li>
                  <li className="flex items-center gap-3">
                    <Mail className="h-4.5 w-4.5 text-accent-600 flex-shrink-0" />
-                    <a href="mailto:hr@clicktzee.co.uk" className="hover:text-accent-700">hr@clicktzee.co.uk</a>
+                    <a href="mailto:hr@clicktzee.com" className="hover:text-accent-700">hr@clicktzee.com</a>
+                </li>
+                 <li className="flex items-center gap-3">
+                   <Mail className="h-4.5 w-4.5 text-accent-600 flex-shrink-0" />
+                    <a href="mailto:manager@clicktzee.com" className="hover:text-accent-700">manager@clicktzee.com</a>
                 </li>
                 <li className="flex items-start gap-3">
                   <Clock className="h-4.5 w-4.5 text-accent-600 flex-shrink-0 mt-0.5" />

@@ -69,19 +69,23 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail className="h-4 w-4 flex-shrink-0 text-navy-400" />
-                <a href="mailto:info@clicktzee.co.uk" className="hover:text-white transition-colors">info@clicktzee.co.uk</a>
+                <a href="mailto:info@clicktzee.com" className="hover:text-white transition-colors">info@clicktzee.com</a>
               </li>
                 <li className="flex items-center gap-2.5">
                 <Mail className="h-4 w-4 flex-shrink-0 text-navy-400" />
-                <a href="mailto:hr@clicktzee.co.uk" className="hover:text-white transition-colors">hr@clicktzee.co.uk</a>
+                <a href="mailto:hr@clicktzee.com" className="hover:text-white transition-colors">hr@clicktzee.com</a>
               </li>
                 <li className="flex items-center gap-2.5">
                 <Mail className="h-4 w-4 flex-shrink-0 text-navy-400" />
-                <a href="mailto:sales@clicktzee.co.uk" className="hover:text-white transition-colors">sales@clicktzee.co.uk</a>
+                <a href="mailto:sales@clicktzee.com" className="hover:text-white transition-colors">sales@clicktzee.com</a>
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail className="h-4 w-4 flex-shrink-0 text-navy-400" />
-                <a href="mailto:manager@clicktzee.co.uk" className="hover:text-white transition-colors">manager@clicktzee.co.uk</a>
+                <a href="mailto:manager@clicktzee.com" className="hover:text-white transition-colors">manager@clicktzee.com</a>
+              </li>
+              <li className="flex items-center gap-2.5">
+                <Mail className="h-4 w-4 flex-shrink-0 text-navy-400" />
+                <a href="mailto:accounts@clicktzee.com" className="hover:text-white transition-colors">accounts@clicktzee.com</a>
               </li>
             </ul>
           </div>
