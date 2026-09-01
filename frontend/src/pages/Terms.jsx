@@ -262,18 +262,32 @@ const TermsPage = () => {
               <p className="mb-2">If you have any questions about these Terms, please contact us at:</p>
               <p className="font-semibold text-navy-800">Click Tzee Ltd</p>
               <p>Address: 86-90 Paul Street London England EC2A 4NE United Kingdom</p>
-              <p>
-  Email:{" "}
-  <a href="mailto:info@clicktzee.com">info@clicktzee.com</a>
-  <br />
-  <a href="mailto:hr@clicktzee.com">hr@clicktzee.com</a>
-  <br />
-  <a href="mailto:sales@clicktzee.com">sales@clicktzee.com</a>
-  <br />
-  <a href="mailto:accounts@clicktzee.com">accounts@clicktzee.com</a>
-  <br />
-  <a href="mailto:manager@clicktzee.com">manager@clicktzee.com</a>
-</p>
+    <li>
+  <table>
+    <tbody>
+      <tr>
+        <td>Email:</td>
+        <td>info@clicktzee.com</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>hr@clicktzee.com</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>sales@clicktzee.com</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>accounts@clicktzee.com</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>manager@clicktzee.com</td>
+      </tr>
+    </tbody>
+  </table>
+</li>
               <p>Phone: [Insert Phone Number]</p>
             </div>
 
